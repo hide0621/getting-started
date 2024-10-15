@@ -15,6 +15,8 @@ If you want to learn more about Quarkus, please visit its website: https://quark
 `quarkus create app org.acme:getting-started \
     --extension='rest' --kotlin --gradle`
 
+また、コマンドの解説については[ここ](https://github.com/hide0621/quarkus-helloworld)を参照
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
