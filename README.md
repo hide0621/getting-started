@@ -17,6 +17,14 @@ If you want to learn more about Quarkus, please visit its website: https://quark
 
 また、コマンドの解説については[ここ](https://github.com/hide0621/quarkus-helloworld)を参照
 
+## ビルド方法
+
+ビルドの記事は[こちら](https://ja.quarkus.io/guides/building-native-image#creating-a-container)
+
+Gradle + コンテナ + GraalVM でのビルド
+
+`./gradlew build -Dquarkus.package.type=native -Dquarkus.native.container-build=true -Dquarkus.container-image.build=true`
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
