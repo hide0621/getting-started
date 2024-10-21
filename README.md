@@ -25,6 +25,18 @@ Gradle + コンテナ + GraalVM でのビルド
 
 `./gradlew build -Dquarkus.package.type=native -Dquarkus.native.container-build=true -Dquarkus.container-image.build=true`
 
+## jibを使ったコンテナイメージの作成
+
+以下のコマンドでパッケージを導入
+
+`quarkus extension add container-image-jib`
+
+その後、以下のコマンドでコンテナイメージを作成
+
+`./gradlew build -Dquarkus.container-image.build=true`
+
+jibについては[こちら](https://qiita.com/os1ma/items/ad6fa30f097239c6fe6d)と[こちら](https://qiita.com/some-nyan/items/e89800c3fd3853824ecd)を参照
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
