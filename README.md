@@ -25,7 +25,7 @@ Gradle + コンテナ + GraalVM でのビルド
 
 `./gradlew build -Dquarkus.package.type=native -Dquarkus.native.container-build=true -Dquarkus.container-image.build=true`
 
-## jibを使ったコンテナイメージの作成
+## jibを使ったコンテナイメージのビルドとpushの抽象化
 
 以下のコマンドでパッケージを導入
 
@@ -36,6 +36,26 @@ Gradle + コンテナ + GraalVM でのビルド
 `./gradlew build -Dquarkus.container-image.build=true`
 
 jibについては[こちら](https://qiita.com/os1ma/items/ad6fa30f097239c6fe6d)と[こちら](https://qiita.com/some-nyan/items/e89800c3fd3853824ecd)を参照
+
+## Docker Extensionを使ったコンテナイメージのビルドとpushの抽象化
+
+以下のコマンドでパッケージを導入（ただしこのパッケージを導入するなら**jib**などの別のコンテナイメージのExtensionは外すこと！）
+
+`quarkus extension add container-image-docker`
+
+その後、以下のコマンドでコンテナイメージを作成
+
+`quarkus build -Dquarkus.container-image.build=true`
+
+なお、ビルド成果物の作成は以下のコマンドを使う
+
+`quarkus build`
+
+ネイティブのビルド成果物の作成は以下のコマンドを使う
+
+`quarkus build --native`
+
+ただしquarkusでネイティブのビルド成果物を作成する場合は、GraalVMをインストールして、パスを通さないといけない
 
 ## Running the application in dev mode
 
