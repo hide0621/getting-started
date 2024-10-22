@@ -67,6 +67,12 @@ jibについては[こちら](https://qiita.com/os1ma/items/ad6fa30f097239c6fe6d
 
 `./gradlew quarkusIntTest -Dquarkus.container-image.build=true`
 
+## Google Cloud Storageのパッケージ導入
+
+以下のコマンドを使う
+
+`quarkus ext add io.quarkiverse.googlecloudservices:quarkus-google-cloud-storage`
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
