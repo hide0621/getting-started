@@ -63,7 +63,7 @@ jibについては[こちら](https://qiita.com/os1ma/items/ad6fa30f097239c6fe6d
 
 ## quarkus + Gradle + コンテナイメージ でのインテグレーションテスト
 
-以下のコマンドを使う
+以下のコマンドを使う（このコマンドによってコンテナイメージも作成される）
 
 `./gradlew quarkusIntTest -Dquarkus.container-image.build=true`
 
