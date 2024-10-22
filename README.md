@@ -27,6 +27,8 @@ Gradle + コンテナ + GraalVM でのビルド
 
 ## jibを使ったコンテナイメージのビルドとpushの抽象化
 
+[この記事](https://kazuhira-r.hatenablog.com/entry/2021/10/10/212836)がわかりやすい
+
 以下のコマンドでパッケージを導入
 
 `quarkus extension add container-image-jib`
@@ -38,6 +40,8 @@ Gradle + コンテナ + GraalVM でのビルド
 jibについては[こちら](https://qiita.com/os1ma/items/ad6fa30f097239c6fe6d)と[こちら](https://qiita.com/some-nyan/items/e89800c3fd3853824ecd)を参照
 
 ## Docker Extensionを使ったコンテナイメージのビルドとpushの抽象化
+
+[この記事](https://kazuhira-r.hatenablog.com/entry/2021/10/10/212836)がわかりやすい
 
 以下のコマンドでパッケージを導入（ただしこのパッケージを導入するなら**jib**などの別のコンテナイメージのExtensionは外すこと！）
 
