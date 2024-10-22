@@ -61,6 +61,12 @@ jibについては[こちら](https://qiita.com/os1ma/items/ad6fa30f097239c6fe6d
 
 ただしquarkusでネイティブのビルド成果物を作成する場合は、GraalVMをインストールして、パスを通さないといけない
 
+## quarkus + Gradle + コンテナイメージ でのインテグレーションテスト
+
+以下のコマンドを使う
+
+`./gradlew quarkusIntTest -Dquarkus.container-image.build=true`
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
